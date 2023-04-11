@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Projeto</title>
+	<link href="principal_home.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<header>
+	<img src="foto_bannerfinalizada.jpg">
+</header><!--fechamento header-->
+<!--///////////////////////////////////////////////////////////////-->
+<nav>
+<a href="projet.html">Home</a>
+<a href="produtos.html">Produtos</a>
+<a href="Contato.html" >Contato</a>
+<a href="quemsomos.html">Quem Somos</a>
+ </nav><!--fechamento nav-->
+<!--///////////////////////////////////////////////////////////////-->
+<aside>
+	
+</aside><!--fechamento aside-->
+<!--///////////////////////////////////////////////////////////////-->
+<article>
+	<div class="MeuSlide" max-width="1200px">
+	<figure>
+	<img class="slide" src="slide/Bolo_aleatorio.jpg"alt="Bolo" style="width:100%">
+	<img class="slide" src="slide/bolo_chocolate.jpg"alt="bolo chocolate" style="width:100%">
+	<img class="slide" src="slide/doce.jpg"alt="doce" style="width:100%">
+	<img class="slide" src="slide/doce_2.jpg"alt="doce" style="width:100%">
+	<img class="slide" src="slide/petit_gateau.jpg"alt="petit gateau" style="width:100%">
+	</figure>
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("slide");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); //Change image every 2 seconds
+}
+</script> 
+</article><!--fechamento article-->
+<!--///////////////////////////////////////////////////////////////-->
+<div id="aside">
+	
+</div><!--fechamento aside-->
+<!--///////////////////////////////////////////////////////////////-->
+<footer>
+	<p>Praça Bernardino de Campos, 150 - Centro, Itapira - SP</p>
+	<img src="social.png">	
+</footer><!--fechamento footer-->
+<!--///////////////////////////////////////////////////////////////-->
+</body>
+</html>
